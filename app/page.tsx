@@ -4,13 +4,13 @@ import { useState } from "react";
 export default function Home() {
     const [points, setPoints] = useState(0);
     return (
-        <div>
-            <h1>Carbon Footprint Calculator</h1>
-            <div>
-                <form>
-                    <h2>Home Energy</h2>
+        <div className="bg-green-800 text-white flex flex-col items-center">
+            <div className="mt-5">
+                <form className="bg-green-500 p-15 rounded-lg flex flex-col gap-5">
+                  <h1 className="font-extrabold text-center text-xl">Carbon Footprint Calculator</h1>
+                    <h2 className="font-extrabold">Home Energy</h2>
                     <div className="flex flex-col">
-                        <label>What is your primary home heating source?</label>
+                        <label className="font-semibold mb-1">What is your primary home heating source?</label>
                         <div>
                             <input
                                 id="home-heating-electric"
@@ -55,7 +55,7 @@ export default function Home() {
                     </div>
 
                     <div className="flex flex-col">
-                        <label>
+                        <label className="font-semibold mb-1">
                             Do you use a renewable energy (Solar/Green Tariff)
                         </label>
                         <div>
@@ -78,9 +78,9 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <h2>Travel & Transport</h2>
+                    <h2 className="font-extrabold">Travel & Transport</h2>
                     <div className="flex flex-col">
-                        <label>What is your primary mode of transport?</label>
+                        <label className="font-semibold mb-1">What is your primary mode of transport?</label>
 
                         <div>
                             <input
@@ -129,7 +129,7 @@ export default function Home() {
                     </div>
 
                     <div className="flex flex-col">
-                        <label>
+                        <label className="font-semibold mb-1">
                             How many hours do you fly per year on average?
                         </label>
                         <div>
@@ -173,7 +173,7 @@ export default function Home() {
                     </div>
 
                     <div className="flex flex-col">
-                        <label>Average weekly mileage in a car?</label>
+                        <label className="font-semibold mb-1">Average weekly mileage in a car?</label>
                         <div>
                             <input
                                 value={100}
@@ -217,9 +217,9 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <h2>Diet & Food</h2>
+                    <h2 className="font-extrabold">Diet & Food</h2>
                     <div className="flex flex-col">
-                        <label>Which best describes your diet?</label>
+                        <label className="font-semibold mb-1">Which best describes your diet?</label>
 
                         <div>
                             <input
@@ -265,7 +265,7 @@ export default function Home() {
                     </div>
 
                     <div className="flex flex-col">
-                        <label>How much food does your household waste?</label>
+                        <label className="font-semibold mb-1">How much food does your household waste?</label>
                         <div>
                             <input
                                 value={0}
@@ -300,7 +300,7 @@ export default function Home() {
                     </div>
 
                     <div className="flex flex-col">
-                        <label>Do you prioritise seasonal/local product?</label>
+                        <label className="font-semibold mb-1">Do you prioritise seasonal/local product?</label>
                         <div>
                             <input
                                 value={-200}
@@ -334,9 +334,9 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <h2>Consumption & Lifestyle</h2>
+                    <h2 className="font-extrabold">Consumption & Lifestyle</h2>
                     <div className="flex flex-col">
-                        <label>How often do you buy new clothes?</label>
+                        <label className="font-semibold mb-1">How often do you buy new clothes?</label>
                         <div>
                             <input
                                 value={100}
@@ -369,7 +369,7 @@ export default function Home() {
                     </div>
 
                     <div className="flex flex-col">
-                        <label>How often do you buy new electronics?</label>
+                        <label className="font-semibold mb-1">How often do you buy new electronics?</label>
 
                         <div>
                             <input
@@ -409,7 +409,7 @@ export default function Home() {
                     </div>
 
                     <div className="flex flex-col">
-                        <label>How much do you recycle?</label>
+                        <label className="font-semibold mb-1">How much do you recycle?</label>
                         <div>
                             <input
                                 value={0}
@@ -443,7 +443,7 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <input type="submit" />
+                    <input className="bg-green-600 hover:bg-green-700 active:bg-green-800 rounded-md" type="submit"/>
                 </form>
             </div>
         </div>
